@@ -1,11 +1,12 @@
 void setup () {
   size( 500, 500);
-  background (102, 255, 255);
 }
 
-int x = 200;
+int x = 0;
+int velocity= +3;
 
 void draw () {
+    background (102, 255, 255);
   noStroke();
   fill (255, 0,0);
   rect (x, 300, 80, 40);
@@ -15,6 +16,10 @@ void draw () {
   
   fill (0,0,0);
   ellipse (x+20, 340,20,20);
+  
+  fill (0,0,0);
+  ellipse (x+ 75, 340, 20, 20);
+  x=x +velocity;
   
   
 }
